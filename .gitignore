@@ -1,0 +1,6 @@
+screens/
+__pycache__/
+*.bak
+node_modules/
+.env
+.env.*

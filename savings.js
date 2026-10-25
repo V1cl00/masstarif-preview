@@ -7,7 +7,7 @@
   /* --- Werte laden: URL-Parameter vor sessionStorage --- */
   try{state=JSON.parse(sessionStorage.getItem(KEY)||'null')}catch(e){}
   var qs=new URLSearchParams(location.search),qk=parseInt(qs.get('kwh'),10),qc=parseFloat((qs.get('ct')||'').replace(',','.'));
-  if(qk>0){state={kwh:qk,ct:(qc>0?qc:3),mode:qs.get('modus')||(state&&state.mode)||null,src:'url'};touched=true}
+  if(qk>0){state={kwh:qk,ct:(qc>0?qc:4),mode:qs.get('modus')||(state&&state.mode)||null,src:'url'};touched=true}
   else if(state){touched=!!state.touched}
   function snap(c){c=Math.round(c*2)/2;return Math.max(.5,Math.min(10,c))}
   function save(kwh,ct,mode){
@@ -53,14 +53,15 @@
     show(useState?state.kwh:+root.dataset.start,'',false);
     calcs[mode]={root:root,set:function(k,store){clr();show(k,'',store)}};
   });
-  /* --- Hero-Teaser: 1 ct × Verbrauch, führt zum vollen Rechner --- */
+  /* --- Hero-Teaser: 4 ct × Verbrauch (bzw. gespeicherter ct-Wert), führt zum vollen Rechner --- */
   document.querySelectorAll('[data-teaser]').forEach(function(t){
     var r=t.querySelector('input[type=range]'),o=t.querySelector('.mt-t-out'),k0=t.querySelector('.mt-t-kwh'),go=t.querySelector('.mt-t-go'),
         min=+t.dataset.min,max=+t.dataset.max,target=document.querySelector(t.dataset.target),kwh;
     function fromR(v){return min*Math.pow(max/min,v/1000)}
     function toR(k){return 1000*Math.log(k/min)/Math.log(max/min)}
     function round(k){var p=Math.pow(10,Math.floor(Math.log10(k))-1);return Math.round(k/p)*p}
-    function upd(k){kwh=k;k0.textContent=fmt(k)+' kWh';o.textContent=fmt(k/100)+' €';r.setAttribute('aria-valuetext',fmt(k)+' kWh pro Jahr, 1 Cent entspricht '+fmt(k/100)+' Euro pro Jahr')}
+    var tc=(state&&state.ct>0)?state.ct:4,cS=t.querySelector('.mt-t-ct');if(cS)cS.textContent=fct(tc).replace(',0','')+' ct';
+    function upd(k){kwh=k;k0.textContent=fmt(k)+' kWh';o.textContent=fmt(Math.round(k*tc/100))+' €';r.setAttribute('aria-valuetext',fmt(k)+' kWh pro Jahr, '+fct(tc)+' Cent weniger entsprechen '+fmt(Math.round(k*tc/100))+' Euro pro Jahr')}
     r.min=0;r.max=1000;r.step=1;var k=(state&&state.kwh>=min&&state.kwh<=max)?state.kwh:+t.dataset.start;r.value=toR(k);upd(k);
     r.addEventListener('input',function(){upd(round(fromR(+r.value)))});
     function jump(){var c=calcs[t.dataset.mode||'gewerbe'];if(c)c.set(kwh,true);
@@ -129,10 +130,10 @@
   document.querySelectorAll('[data-qcheck]').forEach(function(f){
     var res=f.querySelector('.mt-res'),t=f.querySelector('.mt-res-t'),ul=f.querySelector('.mt-res ul'),lv=f.querySelectorAll('.mt-level i');
     var TXT={
-      sw:'<b><a href="#anders-boerse">Nachverhandeln:</a></b> Lange nicht gewechselt heißt oft: Der Preis wurde seit Jahren nicht mehr am Markt gemessen. Ich schaue, ob sich mit Tagespreisen von der Börse oder einer Verlängerung zu besseren Konditionen etwas bewegen lässt.',
-      sw2:'<b><a href="#anders-boerse">Am Markt messen:</a></b> Auch ein neuer Vertrag kann zu hoch angesetzt sein. Ein Blick auf die Rechnung zeigt, ob er zu Ihrem Verbrauch passt – und ich beobachte den Markt während der Laufzeit weiter.',
+      sw:'<b><a href="#anders-boerse">Nachverhandeln:</a></b> Lange nicht gewechselt heißt oft: Der Preis wurde seit Jahren nicht mehr am Markt gemessen. Wir schauen, ob sich mit Tagespreisen von der Börse oder einer Verlängerung zu besseren Konditionen etwas bewegen lässt.',
+      sw2:'<b><a href="#anders-boerse">Am Markt messen:</a></b> Auch ein neuer Vertrag kann zu hoch angesetzt sein. Ein Blick auf die Rechnung zeigt, ob er zu Ihrem Verbrauch passt – und wir beobachten den Markt während der Laufzeit weiter.',
       ni:'<b><a href="#anders-spot">Spottarif bei Nachtverbrauch:</a></b> Wer nachts oder am Wochenende Strom braucht, verbraucht dann, wenn Börsenpreise häufig niedriger sind. Ob ein Spottarif zu Ihrem Profil passt, zeigt die Rechnung.',
-      mu:'<b><a href="#anders-standorte">Ein Vertrag für alle Standorte:</a></b> Mehrere Zähler, Gebäude oder Firmen lassen sich gemeinsam betrachten. Ob ein Sammeltarif für Sie in Frage kommt, prüfe ich im Einzelfall.'};
+      mu:'<b><a href="#anders-standorte">Ein Vertrag für alle Standorte:</a></b> Mehrere Zähler, Gebäude oder Firmen lassen sich gemeinsam betrachten. Ob ein Sammeltarif für Sie in Frage kommt, prüfen wir im Einzelfall.'};
     f.addEventListener('change',function(){
       var a=f.querySelector('[name=mq1]:checked'),b=f.querySelector('[name=mq2]:checked'),c=f.querySelector('[name=mq3]:checked');
       if(!a||!b||!c)return;

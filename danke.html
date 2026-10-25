@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta name="robots" content="noindex,nofollow">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Danke – Ihre Anfrage ist da | Maßtarif</title>
@@ -43,7 +43,7 @@ body.thanks{--ink:#0f1d24;--muted:#45565e;--line:rgba(15,29,36,.12);--glass:rgba
 <main class="t-wrap">
   <div class="t-orb" aria-hidden="true">✓</div>
   <h1>Danke<span id="t-name"></span> – Ihre Anfrage ist da.</h1>
-  <p class="t-lead">Ich melde mich innerhalb von <b>{{ANTWORTZEIT}}</b> persönlich bei Ihnen – gern zu Ihrer Wunschzeit.</p>
+  <p class="t-lead">Wir melden uns innerhalb von <b>{{ANTWORTZEIT}}</b> persönlich bei Ihnen – gern zu Ihrer Wunschzeit.</p>
   <div class="t-cta">
     <!--OPT:WHATSAPP_NUMMER--><a class="t-wa" href="https://wa.me/{{WHATSAPP_NUMMER}}?text=Hallo%2C%20hier%20meine%20Rechnung%20f%C3%BCr%20den%20Energie-Check." target="_blank" rel="noopener" data-track="whatsapp_click">Rechnung per WhatsApp senden</a><!--/OPT-->
     <!--OPT:CALENDLY_URL--><a class="t-cal" href="{{CALENDLY_URL}}" data-track="call_click">Rückruftermin wählen</a><!--/OPT-->
@@ -51,11 +51,11 @@ body.thanks{--ink:#0f1d24;--muted:#45565e;--line:rgba(15,29,36,.12);--glass:rgba
   </div>
   <p class="t-disc">Ein Angebot von {{ANSPRECHPARTNER}}, {{TAETIGKEIT}}.</p>
   <ol class="t-steps">
-    <li><div><b>Ich sehe mir Ihre Angaben an</b><span id="s1">Verbrauch, Branche und – falls vorhanden – Ihre Rechnung.</span></div></li>
+    <li><div><b>Wir sehen uns Ihre Angaben an</b><span id="s1">Verbrauch, Branche und – falls vorhanden – Ihre Rechnung.</span></div></li>
     <li><div><b>Rechnung noch nicht geschickt?</b><span>Kein Problem: per WhatsApp als Foto senden. Das beschleunigt die Ersteinschätzung.</span></div></li>
     <li><div><b>Sie erhalten eine ehrliche Ersteinschätzung</b><span id="s3">Ob sich ein Wechsel lohnt – oder ob Ihr Vertrag schon passt. Sie entscheiden, nichts ändert sich ohne Ihre Zustimmung.</span></div></li>
   </ol>
-  <section class="t-prep" aria-labelledby="h-prep"><h2 id="h-prep">Bis ich mich melde – falls zur Hand</h2>
+  <section class="t-prep" aria-labelledby="h-prep"><h2 id="h-prep">Bis wir uns melden – falls zur Hand</h2>
   <ul><li><b>Letzte Jahresrechnung</b><span>Ein Handyfoto genügt.</span></li><li><b>Vertragsende oder Kündigungsfrist</b><span>Steht meist auf der Rechnung oder im Vertrag.</span></li><li id="p3"><b>Mehrere Standorte oder Zähler?</b><span>Eine kurze Liste reicht für den Anfang.</span></li></ul></section>
 <section class="t-share" id="share"><h2>Kennen Sie jemanden, dem das auch hilft?</h2><p id="sh-t">Ein Betrieb in Ihrem Umfeld, der seine Energierechnung nie prüft? Leiten Sie den Link einfach weiter.</p><div class="row"><button type="button" id="sh-b">Link teilen</button><a id="sh-w" href="https://wa.me/?text=Kostenloser%20Check%20der%20Strom-%20und%20Gasrechnung%3A%20https%3A%2F%2Fmasstarif.de%2F" target="_blank" rel="noopener">Per WhatsApp weiterleiten</a></div></section>
   <p class="t-fine">Ein Angebot von {{ANSPRECHPARTNER}}, {{TAETIGKEIT}}. · <a href="impressum.html" style="color:inherit">Impressum</a> · <a href="datenschutz.html" style="color:inherit">Datenschutz</a></p>
@@ -65,5 +65,5 @@ window.track=function(n,p){try{if(typeof plausible==='function')plausible(n,{pro
 document.addEventListener('click',e=>{const a=e.target.closest('[data-track]');if(a)track(a.dataset.track,{ort:'danke'});});
 try{const n=sessionStorage.getItem('bk_name');if(n){document.getElementById('t-name').textContent=', '+n;}}catch(_){}
 </script>
-<script>(function(){var v=new URLSearchParams(location.search).get("von");if(v==="privat"){var e=document.getElementById("s3");if(e)e.textContent="Ich sage Ihnen ehrlich, ob es für Ihren Haushalt etwas Passenderes gibt – oder ob Ihr Vertrag passt. Sie entscheiden, nichts ändert sich ohne Ihre Zustimmung.";var b=document.querySelector("a.t-back");if(b)b.href="privat/";var p=document.getElementById("p3");if(p)p.remove();var s1=document.getElementById("s1");if(s1)s1.textContent="Ihre Kontaktdaten und – falls vorhanden – Ihre Rechnung.";}})()</script><script>(function(){var p=new URLSearchParams(location.search).get("von")==="privat",u="{{SITE_URL}}/"+(p?"privat/":"");if(p){document.getElementById("sh-t").textContent="Familie, Nachbarn, Freunde: Leiten Sie den Link einfach weiter, wenn jemand seine Rechnung prüfen lassen möchte.";document.getElementById("sh-w").href="https://wa.me/?text="+encodeURIComponent("Rechnung für Strom und Gas kostenlos prüfen lassen: "+u)}var b=document.getElementById("sh-b");b.addEventListener("click",function(){if(navigator.share){navigator.share({title:document.title,url:u}).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.textContent="Link kopiert ✓"})}})})()</script></body>
+<script>(function(){var v=new URLSearchParams(location.search).get("von");if(v==="privat"){var e=document.getElementById("s3");if(e)e.textContent="Wir sagen Ihnen ehrlich, ob es für Ihren Haushalt etwas Passenderes gibt – oder ob Ihr Vertrag passt. Sie entscheiden, nichts ändert sich ohne Ihre Zustimmung.";var b=document.querySelector("a.t-back");if(b)b.href="privat/";var p=document.getElementById("p3");if(p)p.remove();var s1=document.getElementById("s1");if(s1)s1.textContent="Ihre Kontaktdaten und – falls vorhanden – Ihre Rechnung.";}})()</script><script>(function(){var p=new URLSearchParams(location.search).get("von")==="privat",u="{{SITE_URL}}/"+(p?"privat/":"");if(p){document.getElementById("sh-t").textContent="Familie, Nachbarn, Freunde: Leiten Sie den Link einfach weiter, wenn jemand seine Rechnung prüfen lassen möchte.";document.getElementById("sh-w").href="https://wa.me/?text="+encodeURIComponent("Rechnung für Strom und Gas kostenlos prüfen lassen: "+u)}var b=document.getElementById("sh-b");b.addEventListener("click",function(){if(navigator.share){navigator.share({title:document.title,url:u}).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.textContent="Link kopiert ✓"})}})})()</script></body>
 </html>

@@ -36,21 +36,21 @@ $$('input.utm-v').forEach(i=>{ i.value = (q.get('branche')||'') + (q.get('typ')?
 const ALIAS = {gastro:'restaurant',restaurant:'restaurant',hotel:'hotel',hotellerie:'hotel',club:'club',bar:'club',baecker:'baker',baeckerei:'baker',buero:'office',office:'office',industrie:'industry',produktion:'industry',handwerk:'craft',werkstatt:'craft',handel:'retail',einzelhandel:'retail',praxis:'care',klinik:'care',pflege:'care',fitness:'fitness',freizeit:'fitness',landwirtschaft:'farm',kuehlung:'cold',lager:'cold',andere:'other'};
 const HERO = {
   restaurant:['Mittags, abends, Kühlung rund um die Uhr.','Mittagsgeschäft, Abendgeschäft, Kühlung rund um die Uhr: Ihr Tarif sollte zu Ihrem Verbrauch passen – nicht zum Durchschnitt.'],
-  hotel:['Ihr Haus läuft 24 Stunden. Ihr Tarif sollte das wissen.','Frühstück, Wäsche, Klima, Küche: Für Hotels passt oft ein Mischmodell – ich prüfe es an Ihrer Rechnung.'],
+  hotel:['Ihr Haus läuft 24 Stunden. Ihr Tarif sollte das wissen.','Frühstück, Wäsche, Klima, Küche: Für Hotels passt oft ein Mischmodell – wir prüfen es an Ihrer Rechnung.'],
   club:['Ihr Verbrauch liegt nachts. Ihr Preis kann das auch.','Licht, Sound, Kühlung ab 22 Uhr: Für Nachtbetriebe kommt es darauf an, den Preis am Abschlusstag zu fixieren.'],
   baker:['Früh aufstehen lohnt sich – auch beim Strompreis.','Öfen ab der Nacht: Sie verbrauchen Strom zu anderen Zeiten als ein Büro. Genau darauf kalkulieren wir.'],
   office:['Planbar, tagsüber, ohne Überraschungen.','Für Verbrauch zu Bürozeiten ist ein Festpreis oft gut – wir prüfen, ob Ihrer passt.'],
-  industry:['Schichtbetrieb braucht keinen Haushaltstarif.','Produktion, Maschinen, Druckluft: Ich kalkuliere nach Ihren Schichten und Ihrem Verbrauch – Mischmodell oder Börsenpreis.'],
-  craft:['Für die Werkstatt: ein Preis, der zu Ihren Arbeitszeiten passt.','Maschinen tagsüber, Ruhe nachts – oft ist ein Festpreis die richtige Wahl. Ich prüfe es.'],
-  retail:['Ihre Öffnungszeiten bestimmen Ihren Verbrauch.','Licht, Kühlung, Kassen: Ich zeige, ob ein Festpreis oder ein Börsenpreis besser zu Ihrem Geschäft passt.'],
-  care:['Praxis, Klinik, Pflege: Strom, der verlässlich läuft – und passend bepreist ist.','Geräte, Klima, teils 24 Stunden: oft passt ein Mischmodell. Ich prüfe es an Ihrer Rechnung.'],
-  fitness:['Ihre Stoßzeit ist der Feierabend der anderen.','Abends voll, mittags ruhig: Ich kalkuliere nach Ihren Stoßzeiten – oft im Mischmodell.'],
-  farm:['Melken, Kühlen, Lüften – Ihr Tag beginnt vor der Dämmerung.','Frühe Spitzen, Kühlung rund um die Uhr: Ich kalkuliere auf Ihren Hof.'],
+  industry:['Schichtbetrieb braucht keinen Haushaltstarif.','Produktion, Maschinen, Druckluft: Wir kalkulieren nach Ihren Schichten und Ihrem Verbrauch – Mischmodell oder Börsenpreis.'],
+  craft:['Für die Werkstatt: ein Preis, der zu Ihren Arbeitszeiten passt.','Maschinen tagsüber, Ruhe nachts – oft ist ein Festpreis die richtige Wahl. Wir prüfen es.'],
+  retail:['Ihre Öffnungszeiten bestimmen Ihren Verbrauch.','Licht, Kühlung, Kassen: Wir zeigen, ob ein Festpreis oder ein Börsenpreis besser zu Ihrem Geschäft passt.'],
+  care:['Praxis, Klinik, Pflege: Strom, der verlässlich läuft – und passend bepreist ist.','Geräte, Klima, teils 24 Stunden: oft passt ein Mischmodell. Wir prüfen es an Ihrer Rechnung.'],
+  fitness:['Ihre Stoßzeit ist der Feierabend der anderen.','Abends voll, mittags ruhig: Wir kalkulieren nach Ihren Stoßzeiten – oft im Mischmodell.'],
+  farm:['Melken, Kühlen, Lüften – Ihr Tag beginnt vor der Dämmerung.','Frühe Spitzen, Kühlung rund um die Uhr: Wir kalkulieren auf Ihren Hof.'],
   cold:['Kühlung läuft immer. Gerade nachts.','Ihre Anlagen laufen Tag und Nacht: Hier kommt es darauf an, den Preis am Abschlusstag zu fixieren.'],
   other:['Passend kalkuliert – nicht nach Standardtarif.','Jeder Betrieb verbraucht Strom zu anderen Zeiten. Wann genau, sehen wir in Ihrer Rechnung.']
 };
 const SAMMEL = ['Viele Objekte. Ein Tarif. Ein Überblick.','Für Hausverwaltungen, mehrere Standorte und Neugründungen: Sammeltarif mit Portal – alle Objekte auf einen Blick.'];
-const GENERAL_SUB = 'Rechnung als Foto schicken – ich melde mich persönlich. Oder bequem online wechseln. Kostenlos.';
+const GENERAL_SUB = 'Rechnung als Foto schicken – wir melden uns persönlich. Oder bequem online wechseln. Kostenlos.';
 function heroFor(v){
   const c = HERO[v]; if (!c) return;
   const s = $('#hero-sub'), ex = $('#hero-ex');

@@ -22,8 +22,8 @@
 .mt-in input{border:0;outline:0;font:700 1.15rem var(--fh);color:var(--ink);width:9ch;background:transparent;text-align:right}
 .mt-in:focus-within{outline:3px solid var(--acc);outline-offset:2px}
 .mt-range{flex:1 1 260px;accent-color:var(--acc);height:44px;min-width:0;width:100%}
-.mt-big{font:700 clamp(1.25rem,3.6vw,1.75rem)/1.25 var(--fh);margin:1.1rem 0 .8rem}
-.mt-big b{color:var(--gold-ink)}
+.mt-big{font:500 .92rem/1.35 var(--ft);color:#4a6064;margin:.9rem 0 .7rem}
+.mt-big b{color:var(--ink);font-weight:700}
 .mt-tape{list-style:none;padding:0;margin:0 0 1rem;display:grid;gap:.6rem}
 .mt-tape li{display:grid;grid-template-columns:3.2rem 1fr auto;gap:.7rem;align-items:center}
 .mt-tape .c{font:700 .95rem var(--fh);color:var(--deep)}
