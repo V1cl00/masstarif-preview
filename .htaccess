@@ -1,0 +1,35 @@
+# Apache (IONOS/All-Inkl./Hetzner): Kompression, Caching, Sicherheits-Header
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json text/plain application/xml application/rss+xml
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+ErrorDocument 404 /404.html
+
+# HTTPS + ohne www erzwingen (nach Domain-Umzug prüfen)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ {{SITE_URL}}%{REQUEST_URI} [L,R=301]
+</IfModule>
+<FilesMatch "\.(json|py|md)$">
+Require all denied
+</FilesMatch>

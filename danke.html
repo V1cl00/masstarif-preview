@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danke – Ihre Anfrage ist da | Maßtarif</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+body.thanks{min-height:100vh;margin:0;background:radial-gradient(60% 50% at 85% 0%,rgba(11,110,115,.14),transparent 70%),linear-gradient(rgba(15,29,36,.035) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,rgba(15,29,36,.035) 1px,transparent 1px) 0 0/40px 40px,#f7f5f0 !important;color:#0f1d24;font-family:var(--fb)}
+.t-wrap{max-width:760px;margin:0 auto;padding:clamp(5rem,12vh,8rem) 1.4rem 4rem}
+.t-orb{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 0 80px -10px var(--g1);display:grid;place-items:center;font:800 2.2rem var(--fd);color:#120a24;animation:pop .8s var(--ease) both}
+@keyframes pop{from{transform:scale(.4);opacity:0}}
+.t-wrap h1{font:800 clamp(2.4rem,6vw,4.4rem)/1 var(--fd);letter-spacing:-.03em;margin:1.4rem 0 .8rem}
+.t-lead{font-size:1.15rem;color:var(--muted);line-height:1.55}
+.t-steps{list-style:none;padding:0;margin:2rem 0;display:grid;gap:.8rem;counter-reset:s}
+.t-steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:1rem;align-items:start;padding:1.1rem;border:1px solid var(--line);border-radius:18px;background:var(--glass);backdrop-filter:blur(10px)}
+.t-steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);font:700 1.1rem var(--fd)}
+.t-steps b{display:block;font:700 1.05rem var(--fd);margin-bottom:.2rem}
+.t-steps span{color:var(--muted)}
+.t-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.5rem 0}
+.t-cta a{display:inline-flex;align-items:center;gap:.5rem;height:52px;padding:0 1.4rem;border-radius:99px;font:700 1rem var(--fd);text-decoration:none}
+.t-wa{background:#25d366;color:#fff}
+.t-cal{background:var(--ink);color:#120a24}
+.t-back{color:var(--muted);border:1px solid var(--line)}
+.t-fine{font-size:.85rem;color:var(--muted);margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem}
+body.thanks{--ink:#0f1d24;--muted:#45565e;--line:rgba(15,29,36,.12);--glass:rgba(255,255,255,.9);--g1:#0b6e73;--g2:#1f8f5f}
+.t-orb{color:#fff!important}.t-steps li::before{background:#0b6e73!important;color:#fff}
+.t-wa{background:#0f7a40!important}.t-cal{background:#0b6e73!important;color:#fff!important}.t-back{color:#0f1d24!important}
+.t-disc{font-size:.85rem;color:var(--muted)}
+.t-share{margin-top:18px;padding:20px 24px;border-radius:18px;border:1px dashed rgba(11,110,115,.35);background:#fff}.t-share h2{font-size:17px;margin:0 0 6px}.t-share p{margin:0 0 12px;font-size:14.5px;color:#45565e}.t-share .row{display:flex;flex-wrap:wrap;gap:10px}.t-share a,.t-share button{font-family:inherit;font-size:14px;font-weight:600;line-height:1.2;padding:11px 16px;border-radius:999px;border:1px solid rgba(11,110,115,.35);background:#fff;color:#0b6e73;cursor:pointer;text-decoration:none}
+.t-prep{margin-top:22px;padding:22px 24px;border-radius:18px;background:#eef6f5;border:1px solid rgba(11,110,115,.18)}
+.t-prep h2{font-size:17px;margin:0 0 12px;letter-spacing:-.01em}.t-prep ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.t-prep li{background:#fff;border-radius:12px;padding:12px 14px;border:1px solid rgba(15,29,36,.08)}.t-prep b{display:block;font-size:14.5px}.t-prep span{font-size:13.5px;color:#45565e}
+@media print{.t-cta{display:none}}
+</style>
+<!--ORG--><script type="application/ld+json">{{ORG_JSONLD}}</script>
+{{TRACKING_SNIPPET}}
+</head>
+<body class="thanks">
+<main class="t-wrap">
+  <div class="t-orb" aria-hidden="true">✓</div>
+  <h1>Danke<span id="t-name"></span> – Ihre Anfrage ist da.</h1>
+  <p class="t-lead">Ich melde mich innerhalb von <b>{{ANTWORTZEIT}}</b> persönlich bei Ihnen – gern zu Ihrer Wunschzeit.</p>
+  <div class="t-cta">
+    <!--OPT:WHATSAPP_NUMMER--><a class="t-wa" href="https://wa.me/{{WHATSAPP_NUMMER}}?text=Hallo%2C%20hier%20meine%20Rechnung%20f%C3%BCr%20den%20Energie-Check." target="_blank" rel="noopener" data-track="whatsapp_click">Rechnung per WhatsApp senden</a><!--/OPT-->
+    <!--OPT:CALENDLY_URL--><a class="t-cal" href="{{CALENDLY_URL}}" data-track="call_click">Rückruftermin wählen</a><!--/OPT-->
+    <a class="t-back" href="index.html">Zurück zur Seite</a>
+  </div>
+  <p class="t-disc">Ein Angebot von {{ANSPRECHPARTNER}}, {{TAETIGKEIT}}.</p>
+  <ol class="t-steps">
+    <li><div><b>Ich sehe mir Ihre Angaben an</b><span id="s1">Verbrauch, Branche und – falls vorhanden – Ihre Rechnung.</span></div></li>
+    <li><div><b>Rechnung noch nicht geschickt?</b><span>Kein Problem: per WhatsApp als Foto senden. Das beschleunigt die Ersteinschätzung.</span></div></li>
+    <li><div><b>Sie erhalten eine ehrliche Ersteinschätzung</b><span id="s3">Ob sich ein Wechsel lohnt – oder ob Ihr Vertrag schon passt. Sie entscheiden, nichts ändert sich ohne Ihre Zustimmung.</span></div></li>
+  </ol>
+  <section class="t-prep" aria-labelledby="h-prep"><h2 id="h-prep">Bis ich mich melde – falls zur Hand</h2>
+  <ul><li><b>Letzte Jahresrechnung</b><span>Ein Handyfoto genügt.</span></li><li><b>Vertragsende oder Kündigungsfrist</b><span>Steht meist auf der Rechnung oder im Vertrag.</span></li><li id="p3"><b>Mehrere Standorte oder Zähler?</b><span>Eine kurze Liste reicht für den Anfang.</span></li></ul></section>
+<section class="t-share" id="share"><h2>Kennen Sie jemanden, dem das auch hilft?</h2><p id="sh-t">Ein Betrieb in Ihrem Umfeld, der seine Energierechnung nie prüft? Leiten Sie den Link einfach weiter.</p><div class="row"><button type="button" id="sh-b">Link teilen</button><a id="sh-w" href="https://wa.me/?text=Kostenloser%20Check%20der%20Strom-%20und%20Gasrechnung%3A%20https%3A%2F%2Fmasstarif.de%2F" target="_blank" rel="noopener">Per WhatsApp weiterleiten</a></div></section>
+  <p class="t-fine">Ein Angebot von {{ANSPRECHPARTNER}}, {{TAETIGKEIT}}. · <a href="impressum.html" style="color:inherit">Impressum</a> · <a href="datenschutz.html" style="color:inherit">Datenschutz</a></p>
+</main>
+<script>
+window.track=function(n,p){try{if(typeof plausible==='function')plausible(n,{props:p||{}});}catch(_){}};
+document.addEventListener('click',e=>{const a=e.target.closest('[data-track]');if(a)track(a.dataset.track,{ort:'danke'});});
+try{const n=sessionStorage.getItem('bk_name');if(n){document.getElementById('t-name').textContent=', '+n;}}catch(_){}
+</script>
+<script>(function(){var v=new URLSearchParams(location.search).get("von");if(v==="privat"){var e=document.getElementById("s3");if(e)e.textContent="Ich sage Ihnen ehrlich, ob es für Ihren Haushalt etwas Passenderes gibt – oder ob Ihr Vertrag passt. Sie entscheiden, nichts ändert sich ohne Ihre Zustimmung.";var b=document.querySelector("a.t-back");if(b)b.href="privat/";var p=document.getElementById("p3");if(p)p.remove();var s1=document.getElementById("s1");if(s1)s1.textContent="Ihre Kontaktdaten und – falls vorhanden – Ihre Rechnung.";}})()</script><script>(function(){var p=new URLSearchParams(location.search).get("von")==="privat",u="{{SITE_URL}}/"+(p?"privat/":"");if(p){document.getElementById("sh-t").textContent="Familie, Nachbarn, Freunde: Leiten Sie den Link einfach weiter, wenn jemand seine Rechnung prüfen lassen möchte.";document.getElementById("sh-w").href="https://wa.me/?text="+encodeURIComponent("Rechnung für Strom und Gas kostenlos prüfen lassen: "+u)}var b=document.getElementById("sh-b");b.addEventListener("click",function(){if(navigator.share){navigator.share({title:document.title,url:u}).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.textContent="Link kopiert ✓"})}})})()</script></body>
+</html>

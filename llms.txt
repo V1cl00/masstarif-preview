@@ -1,0 +1,103 @@
+# Maßtarif
+
+> Persönlicher Energie-Check für Betriebe und Privathaushalte: Prüfung von Strom- und Gasrechnungen, Vergleich von Festpreis-, Misch- und Spotmodell, Begleitung beim Wechsel. Ansprechpartner: {{ANSPRECHPARTNER}}, {{TAETIGKEIT}}. Region: {{ANSCHRIFT_ORT}}; Beratung deutschlandweit.
+
+Kontakt: {{TELEFON_ANZEIGE}} · {{EMAIL}} · {{SITE_URL}}/#start-form
+
+## Hauptseiten
+- [Gewerbe-Check]({{SITE_URL}}/): Rechnung kostenlos prüfen lassen
+- [Gewerbestrom]({{SITE_URL}}/gewerbestrom/)
+- [Gewerbegas]({{SITE_URL}}/gewerbegas/)
+- [Strom Gewerbe wechseln]({{SITE_URL}}/strom-gewerbe-wechseln/)
+- [Privat]({{SITE_URL}}/privat/)
+- [Über Maßtarif]({{SITE_URL}}/ueber-masstarif/)
+
+## Ratgeber
+- [Grundpreis und Arbeitspreis einfach erklärt]({{SITE_URL}}/ratgeber/grundpreis-arbeitspreis/): Was ist der Grundpreis, was der Arbeitspreis – und wie berechnen Sie daraus Ihre Jahreskosten? Mit Beispielrechnung und Rechner.
+- [Geschätzter Zählerstand auf der Rechnung – was tun?]({{SITE_URL}}/ratgeber/geschaetzter-zaehlerstand/): Auf Ihrer Strom- oder Gasrechnung steht „geschätzt“? Was das bedeutet, wann geschätzt werden darf und wie Sie eine Korrektur erreichen.
+- [Neukundenbonus beim Strom: Was er wirklich bringt]({{SITE_URL}}/ratgeber/neukundenbonus/): Neukundenbonus, Sofortbonus, Treuebonus: Wann ein Bonus hilft, welche Bedingungen gelten und warum Sie Tarife auch ohne Bonus vergleichen sollten.
+- [Abschlag &amp; Nachzahlung: Überraschungen vermeiden]({{SITE_URL}}/ratgeber/abschlag-nachzahlung/): Wie der monatliche Abschlag berechnet wird, warum Nachzahlungen entstehen und wie Sie Ihren Abschlag anpassen lassen. Mit Abschlags-Check.
+- [Gas: Kubikmeter in kWh umrechnen – so geht’s]({{SITE_URL}}/ratgeber/gas-m3-in-kwh/): Ihr Gaszähler zeigt m³, die Rechnung kWh. So rechnen Sie mit Brennwert und Zustandszahl um – mit Beispiel und Umrechner.
+- [Preisgarantie bei Strom &amp; Gas: was gilt wirklich?]({{SITE_URL}}/ratgeber/preisgarantie/): Volle, eingeschränkte oder Energiepreisgarantie: Was eine Preisgarantie abdeckt, was nicht – und welche Rechte Sie bei Preisänderungen haben.
+- [Grundversorgung: was sie ist, wann Wechsel lohnt]({{SITE_URL}}/ratgeber/grundversorgung/): Was Grundversorgung bedeutet, wer darin landet, wie Sie mit zwei Wochen Frist kündigen und was für Betriebe über 10.000 kWh gilt.
+- [RLM, SLP und Lastgang: So wird Gewerbestrom gemessen]({{SITE_URL}}/ratgeber/rlm-slp-lastgang/): Standardlastprofil oder registrierende Leistungsmessung? Was RLM und SLP bedeuten, was ein Lastgang zeigt und wie Lastspitzen Kosten treiben.
+
+## Rechner
+- [Jahreskosten-Rechner: Grund- und Arbeitspreis]({{SITE_URL}}/rechner/jahreskosten/)
+- [Abschlags-Check: Droht eine Nachzahlung?]({{SITE_URL}}/rechner/abschlag-check/)
+- [Gas-Umrechner: m³ in kWh]({{SITE_URL}}/rechner/gas-m3-kwh/)
+- [Musterrechnung]({{SITE_URL}}/musterrechnung/)
+- [Downloads]({{SITE_URL}}/downloads/)
+
+## Lexikon
+- [Arbeitspreis]({{SITE_URL}}/lexikon/arbeitspreis/)
+- [Grundpreis]({{SITE_URL}}/lexikon/grundpreis/)
+- [Leistungspreis]({{SITE_URL}}/lexikon/leistungspreis/)
+- [Abschlag]({{SITE_URL}}/lexikon/abschlag/)
+- [Nachzahlung]({{SITE_URL}}/lexikon/nachzahlung/)
+- [Jahresabrechnung]({{SITE_URL}}/lexikon/jahresabrechnung/)
+- [Zählerstand (abgelesen/geschätzt)]({{SITE_URL}}/lexikon/zaehlerstand/)
+- [Netzentgelt]({{SITE_URL}}/lexikon/netzentgelt/)
+- [Netzbetreiber]({{SITE_URL}}/lexikon/netzbetreiber/)
+- [Messstellenbetrieb]({{SITE_URL}}/lexikon/messstellenbetrieb/)
+- [Smart Meter (intelligentes Messsystem)]({{SITE_URL}}/lexikon/smart-meter/)
+- [RLM (registrierende Leistungsmessung)]({{SITE_URL}}/lexikon/rlm/)
+- [SLP (Standardlastprofil)]({{SITE_URL}}/lexikon/slp/)
+- [Lastgang]({{SITE_URL}}/lexikon/lastgang/)
+- [Grundversorgung]({{SITE_URL}}/lexikon/grundversorgung/)
+- [Ersatzversorgung]({{SITE_URL}}/lexikon/ersatzversorgung/)
+- [Haushaltskunde]({{SITE_URL}}/lexikon/haushaltskunde/)
+- [Gewerbekunde]({{SITE_URL}}/lexikon/gewerbekunde/)
+- [Sondervertrag]({{SITE_URL}}/lexikon/sondervertrag/)
+- [Preisgarantie]({{SITE_URL}}/lexikon/preisgarantie/)
+- [Festpreis]({{SITE_URL}}/lexikon/festpreis/)
+- [Spotmodell]({{SITE_URL}}/lexikon/spotmodell/)
+- [Mischmodell]({{SITE_URL}}/lexikon/mischmodell/)
+- [Dynamischer Stromtarif]({{SITE_URL}}/lexikon/dynamischer-tarif/)
+- [Stromsteuer]({{SITE_URL}}/lexikon/stromsteuer/)
+- [Energiesteuer (Erdgas)]({{SITE_URL}}/lexikon/energiesteuer/)
+- [CO₂-Preis]({{SITE_URL}}/lexikon/co2-preis/)
+- [Konzessionsabgabe]({{SITE_URL}}/lexikon/konzessionsabgabe/)
+- [Umlagen]({{SITE_URL}}/lexikon/umlagen/)
+- [Brennwert]({{SITE_URL}}/lexikon/brennwert/)
+- [Zustandszahl]({{SITE_URL}}/lexikon/zustandszahl/)
+- [Gasverbrauch in kWh]({{SITE_URL}}/lexikon/gas-kwh/)
+- [Marktlokations-ID]({{SITE_URL}}/lexikon/marktlokation/)
+- [Kündigungsfrist]({{SITE_URL}}/lexikon/kuendigungsfrist/)
+
+## Branchen
+- [baeckerei-karlsruhe]({{SITE_URL}}/baeckerei-karlsruhe/)
+- [baeckerei]({{SITE_URL}}/baeckerei/)
+- [bar-club-karlsruhe]({{SITE_URL}}/bar-club-karlsruhe/)
+- [bar-club]({{SITE_URL}}/bar-club/)
+- [buero-frankfurt]({{SITE_URL}}/buero-frankfurt/)
+- [buero-karlsruhe]({{SITE_URL}}/buero-karlsruhe/)
+- [buero]({{SITE_URL}}/buero/)
+- [einzelhandel-karlsruhe]({{SITE_URL}}/einzelhandel-karlsruhe/)
+- [einzelhandel]({{SITE_URL}}/einzelhandel/)
+- [fitness-karlsruhe]({{SITE_URL}}/fitness-karlsruhe/)
+- [fitness]({{SITE_URL}}/fitness/)
+- [gastronomie-berlin]({{SITE_URL}}/gastronomie-berlin/)
+- [gastronomie-karlsruhe]({{SITE_URL}}/gastronomie-karlsruhe/)
+- [gastronomie]({{SITE_URL}}/gastronomie/)
+- [handwerk-karlsruhe]({{SITE_URL}}/handwerk-karlsruhe/)
+- [handwerk-stuttgart]({{SITE_URL}}/handwerk-stuttgart/)
+- [handwerk]({{SITE_URL}}/handwerk/)
+- [hausverwaltung-karlsruhe]({{SITE_URL}}/hausverwaltung-karlsruhe/)
+- [hausverwaltung]({{SITE_URL}}/hausverwaltung/)
+- [hotel-karlsruhe]({{SITE_URL}}/hotel-karlsruhe/)
+- [hotel-muenchen]({{SITE_URL}}/hotel-muenchen/)
+- [hotel]({{SITE_URL}}/hotel/)
+- [industrie-karlsruhe]({{SITE_URL}}/industrie-karlsruhe/)
+- [industrie-mannheim]({{SITE_URL}}/industrie-mannheim/)
+- [industrie]({{SITE_URL}}/industrie/)
+- [kuehlung-lager-karlsruhe]({{SITE_URL}}/kuehlung-lager-karlsruhe/)
+- [kuehlung-lager]({{SITE_URL}}/kuehlung-lager/)
+- [landwirtschaft-karlsruhe]({{SITE_URL}}/landwirtschaft-karlsruhe/)
+- [landwirtschaft]({{SITE_URL}}/landwirtschaft/)
+- [praxis-karlsruhe]({{SITE_URL}}/praxis-karlsruhe/)
+- [praxis]({{SITE_URL}}/praxis/)
+
+## Rechtliches
+- [Impressum]({{SITE_URL}}/impressum.html)
+- [Datenschutz]({{SITE_URL}}/datenschutz.html)
