@@ -1,8 +1,8 @@
 # Maßtarif
 
-> Persönlicher Energie-Check für Betriebe und Privathaushalte: Prüfung von Strom- und Gasrechnungen, Vergleich von Festpreis-, Misch- und Spotmodell, Begleitung beim Wechsel. Ansprechpartner: {{ANSPRECHPARTNER}}, {{TAETIGKEIT}}. Region: {{ANSCHRIFT_ORT}}; Beratung deutschlandweit.
+> Persönlicher Energie-Check für Betriebe und Privathaushalte: Prüfung von Strom- und Gasrechnungen, Vergleich von Festpreis-, Misch- und Spotmodell, Begleitung beim Wechsel. Ansprechpartner: Nico Reichert, {{TAETIGKEIT}}. Region: {{ANSCHRIFT_ORT}}; Beratung deutschlandweit.
 
-Kontakt: {{TELEFON_ANZEIGE}} · {{EMAIL}} · {{SITE_URL}}/#start-form
+Kontakt: 0152 08549064 · kontakt@masstarif.de · {{SITE_URL}}/#start-form
 
 ## Hauptseiten
 - [Gewerbe-Check]({{SITE_URL}}/): Rechnung kostenlos prüfen lassen
